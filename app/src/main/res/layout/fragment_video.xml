@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.guanzhuli.kamcordsample.fragment.VideoFragment">
+
+    <SurfaceView
+            android:id="@+id/video_surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+        <LinearLayout
+                android:background="@android:color/darker_gray"
+                android:padding="@dimen/narrow_padding"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:src="@drawable/ic_favorite"
+                    android:tint="@android:color/holo_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/video_heart"
+                    android:paddingLeft="@dimen/narrow_padding"
+                    android:textColor="@android:color/white"
+                    android:text="@string/heart_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
